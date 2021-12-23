@@ -1,0 +1,79 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.maincarouselContainer {
+  width: 100%;
+  position: relative;
+}
+
+.carouselArrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  font-size: 1.5rem;
+  box-shadow: none;
+  background: #000;
+  color: #ffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.carouselArrow:hover {
+  background: rgba(0, 0, 0, 0.589);
+}
+
+.maincarouselLeftArrow {
+  left: 0;
+}
+.maincarouselRightArrow {
+  right: 0;
+}
+
+.maincarousel {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.maincarousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carouselImage {
+  flex: 0 0 auto;
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+.carouselImage:not(:last-child) {
+  margin-right: 10px;
+}
+
+.singlecarouselImage {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
